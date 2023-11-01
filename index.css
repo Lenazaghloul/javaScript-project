@@ -1,0 +1,10 @@
+.image{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+img{
+    margin-left: 20px;
+}
