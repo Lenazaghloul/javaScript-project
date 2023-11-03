@@ -134,9 +134,9 @@ console.clear()
 // }
 
 
-// const x = 15;
+// const x = 7;
 // const color = x > 10 ? 'red' : 'green';
-// // console.log(color);
+// console.log(color);
 
 // switch (color) {
 //     case 'green':
@@ -152,7 +152,7 @@ console.clear()
 // }
 
 
-//function
+// function
 // function num (num1, num2) {
 //     console.log(num1 + num2);
 // }
@@ -166,3 +166,70 @@ console.clear()
 // console.log(num(10,10));
 
 
+const Name= document.getElementById("Name");
+const ID = document.getElementById("ID");
+const Email = document.getElementById("Email");
+
+const studentList=[];
+
+function addStudent(){
+    const studentInfo={
+        name:Name.value,
+        id:ID.value,
+        email:Email.value
+    };
+    console.log(studentInfo)
+    studentList.push(studentInfo);
+    displayInfo();
+
+
+  
+}
+
+function displayInfo(){
+    let tabelData="";
+    for(i =0 ; i<studentList.length; i++){
+        
+         tabelData +=`<tr><td>${studentList[i].name}</td><td>${studentList[i].id}</td><td>${studentList[i].email}</td>
+       
+        </tr>`;
+ }
+document.getElementById("tableBody").innerHTML=tabelData;
+
+}
+
+
+
+
+
+
+// function resetForm() {
+//     Name.value = "";
+//     ID.value = "";
+//     Email.value = "";
+// }
+
+
+// function validateName() {
+//     const validate = Name.value;
+//     if (validate.length === 0) {
+//         return "Error";
+//     } else {
+//         return "";
+//     }
+// }
+
+
+
+
+
+x=10;
+y='10';
+z=x+y;
+document.write(z);
+
+
+var a=15
+var b=(a<=15 ? "a": "b");
+document.write(b)
+console.log(b)

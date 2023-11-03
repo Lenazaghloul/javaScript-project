@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+   
 </head>
 <body>
 
-    <div class="image" id="images">
+    <!-- <div class="image" id="images">
         <div>
         <h1>Hello World</h1>
         <p>A paragraph is a series of sentences that are organized and coherent,<br>and are all related to a single topic.,<br>
@@ -17,7 +20,45 @@
          <img src="./images/download (1).jpg" alt="">
     </div>
 
-    <a href="./index1.html">Another page</a>
+    <a href="./index1.html">Another page</a> -->
+
+
+
+    <div class="container">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="Name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="Email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>ID</label>
+            <input type="number" id="ID" class="form-control">
+        </div>
+        <button onclick="addStudent()" class="btn btn-primary my-3">Add Student</button>
+
+
+        <table class="table table-dark table-striped">
+
+            <thead>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+            </thead>
+            <tbody id="tableBody">
+              
+
+
+            </tbody>
+
+        </table>
+  
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+        
 
     <script src="./index.js">
         
