@@ -1,10 +1,11 @@
 // alert('hello world')
-console.log('hello world')
-console.warn('Warning message')
-console.error('error message')
-console.clear()
+// console.log('hello world')
+// console.warn('Warning message')
+// console.error('error message')
+// console.clear()
 
 // var let const
+
 
 // let age = 20
 // age = 30
@@ -25,7 +26,7 @@ console.clear()
 // console.log(typeof(age))
 // const rate = 6.8
 // console.log(typeof(rate))
-// const isWorking = false
+// const isWorking = true
 // console.log(typeof(isWorking))
 // let x = undefined
 // console.log(typeof(x))
@@ -33,12 +34,12 @@ console.clear()
 
 // console.log('My name is ' + name + ' and age is ' + age)
 
-// console.log(`My name is ${name} and age is ${age}`)
+// console.log(`My name is ${name} and my age is ${age}`)
 
 // const l = 'LENA AMR'
 // console.log(l.toUpperCase())
 // console.log(l.toLowerCase())
-// console.log(l.split())
+// console.log(l.split(""))
 
 
 //Arrays
@@ -48,10 +49,9 @@ console.clear()
 
 // const fruits = ['apple', 'banana', 'orange']
 // fruits.push('mango')
-// // fruits[4] = 'grapes'
 // fruits.unshift('orange')
 // fruits.pop()
-// console.log(fruits.indexOf('apple'))
+// console.log(fruits.indexOf('banana'))
 // console.log(fruits)
 
 // const person = {
@@ -61,7 +61,9 @@ console.clear()
 //     hobbies: ['music', 'watching', 'sports'],
 //     address: {
 //         street: '123',
-//         country: 'egypt',
+//         country: {
+//             country: 'egypt', 
+//             city:'United'},
 //         city: 'cairo',
 //     }
     
@@ -71,36 +73,40 @@ console.clear()
 // person.phone= 1264654
 // console.log(person.hobbies)
 // console.log(person.address)
-// console.log(person)
+// console.log(person.address.city)
+// person.address.building = '4545'
+// console.log(person.address.country.building = 5154)
+
+// console.log(person.address.country.city)
 
 
-// const todos =[
-//     {
-//         id: 1,
-//         text: 'watching',
-//         isCompleted: true
-//     },
-//     {
-//         id: 2,
-//         text: 'Meeting',
-//         isCompleted: true
-//     }, {
-//         id: 3,
-//         text: 'Cooking',
-//         isCompleted: false
-//     },
+const todos =[
+    {
+        id: 1,
+        text: 'watching',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting',
+        isCompleted: true
+    }, {
+        id: 3,
+        text: 'Cooking',
+        isCompleted: false
+    },
 
-// ]
+]
 
 
 
-// console.log(todos[0])
-// const todoJson = JSON.stringify(todos)
-// console.log(todoJson)
+console.log(todos[1])
+const todoJson = JSON.stringify(todos)
+console.log(todoJson)
 
-// for (let i =0 ; i < todos.length ; i++){
-//     console.log(todos[i].isCompleted)
-// }
+for (let i =0 ; i < todos.length ; i++){
+    console.log(todos[i].text)
+}
 
 
 // for (let t of todos){
@@ -223,13 +229,13 @@ document.getElementById("tableBody").innerHTML=tabelData;
 
 
 
-x=10;
-y='10';
-z=x+y;
-document.write(z);
+// x=10;
+// y='10';
+// z=x+y;
+// document.write(z);
 
 
-var a=15
-var b=(a<=15 ? "a": "b");
-document.write(b)
-console.log(b)
+// var a=15
+// var b=(a<=15 ? "a": "b");
+// document.write(b)
+// console.log(b)
